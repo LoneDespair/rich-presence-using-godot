@@ -194,20 +194,27 @@ func update_activity() -> void:
 		add_child(discord_presence)
 	
 	var app_name := app_name_edit.text
+	var details := details_edit.text
+	var state := state_edit.text
+	
 	var activity_table := {
-		"name" : app_name,
-		"details" : details_edit.text,
-		"state" : state_edit.text,
 		"timestamps" : {
 			"start" : int(Time.get_unix_time_from_system())
 		},
-		"assets" : {
-			"large_image" : large_image_edit.text,
-		}
+		"assets" : {}
 	}
 	
-	if app_name.is_empty():
-		activity_table.erase("name")
+	if app_name.is_empty() == false:
+		activity_table["name"] = app_name
+	
+	if details.is_empty() == false:
+		activity_table["details"] = details
+	
+	if state.is_empty() == false:
+		activity_table["state"] = state
+	
+	if large_image_edit.text.is_empty() == false:
+		activity_table["assets"]["large_image"] = large_image_edit.text
 	
 	discord_presence.set_activity(activity_table)
 
