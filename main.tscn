@@ -51,6 +51,7 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 35)
 layout_mode = 2
 placeholder_text = "This can be generated on Discord"
+caret_blink = true
 script = ExtResource("2_1bvp3")
 
 [node name="AppName" type="VBoxContainer" parent="MarginContainer/content" unique_id=830314189]
@@ -68,6 +69,7 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 35)
 layout_mode = 2
 placeholder_text = "This overwrites the name from App ID"
+caret_blink = true
 script = ExtResource("2_1bvp3")
 
 [node name="Process" type="VBoxContainer" parent="MarginContainer/content" unique_id=193172358]
@@ -111,6 +113,7 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 35)
 layout_mode = 2
 placeholder_text = "Game mode you're playing"
+caret_blink = true
 script = ExtResource("2_1bvp3")
 
 [node name="State" type="VBoxContainer" parent="MarginContainer/content" unique_id=1063856438]
@@ -127,6 +130,7 @@ text = "State (Optional):"
 unique_name_in_owner = true
 layout_mode = 2
 placeholder_text = "Character level, or some other status"
+caret_blink = true
 script = ExtResource("2_1bvp3")
 
 [node name="LargeImage" type="VBoxContainer" parent="MarginContainer/content" unique_id=1298375967]
@@ -144,6 +148,7 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 35)
 layout_mode = 2
 placeholder_text = "Icon key"
+caret_blink = true
 script = ExtResource("2_1bvp3")
 
 [node name="Timestamp" type="VBoxContainer" parent="MarginContainer/content" unique_id=1651636688]
